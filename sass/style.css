@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+.board {
+    display: block;
+    width: 80vw;
+    margin: 20px auto 0 auto;
+}
+
+.board h1 {
+    text-align: center;
+}
+
+.board .create-column {
+    width: 170px;
+    height: 55px;
+    background-color: blue;
+    margin: 20px 43%;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+}
