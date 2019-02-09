@@ -6,7 +6,7 @@ document.addEventListener('DOMcontentLoaded', function () {
 
     //------funkcja generująca ID--------//
 
-    function Randomstring() {
+    function randomString() {
 
         var chars = '0123456789abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXTZ';
         var str = '';
@@ -14,7 +14,7 @@ document.addEventListener('DOMcontentLoaded', function () {
             str += chars[Math.floor(Math.random() * chars.length)];
         }
         return str;
-
+        
     }
 
     //------funkcja generująca templatki--------//
@@ -45,8 +45,9 @@ document.addEventListener('DOMcontentLoaded', function () {
         this.element.querySelector('.column').addEventListener('click', function (event) {
             if (event.target.classList.contains('btn-delete')) {
                 self.removeColumn();
+                
             }
-
+            
             if (event.target.classList.contains('add-card')) {
                 self.addCard(new Card(prompt("Enter the name of the card")));
             }
